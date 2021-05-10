@@ -27,3 +27,19 @@
 
 # 강제 업로드
 $ git push origin +master
+
+=======================================================================================================
+# git 협업
+1. Fork 가져가기 
+2. origin(fork된 나의 레파지토리) clone 내려받기 [중요]
+3. origin(팀원), upstream(팀장) 주소 저장(remote add upstream 업스트림주소) 절대 upstream 건들지 않기
+4. branch
+브랜치 목록 보기 : git branch --list
+브랜치 생성만 : git branch <브랜치명>
+브랜치 이동 : git switch <브랜치명>
+브랜치 생성 동시에 이동 : git checkout -b <브랜치명>
+5. pull request(PR) - 팀장한테 요청, 팀장은 모두 수락 후
+6. 팀원들은 fetch(git fetch upstream) 받고, rebase(git rebase upstream/master) 한다.
+
+# 주의사항
+- 같은 파일 다른인원이 동시 작업하면 안됨
