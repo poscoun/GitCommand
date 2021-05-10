@@ -1,23 +1,25 @@
-# git init(저장소 설정)
+# git 개인
+
+## git init(저장소 설정)
 1. git init
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 2. git remote add origin 레파지토리 주소(예-https://github.com/poscoun/Goott_JAVA.git)
 3. git remote -v 
 
-# git 업로드
+## git 업로드
 1. git status
 2. git add . ( . : all )
 3. git commit -m "memo"
 4. git push origin master
 
-# git clone(저장소 불러오기)
+## git clone(저장소 불러오기)
 1. git clone 레파지토리 주소
 
-# git pull(최신화)
+## git pull(최신화)
 1. git pull origin master  안될 시 git pull 만 입력
 
-# git 삭제
+## git 삭제
 1. git rm -rf {파일명 및 폴더명}  // 원격 스토리지 및 로컬 스토리지에 있는 파일을 삭제한다.
    git rm -r - cached {파일명 및 폴더명}  // 원격 스토리지만 삭제한다.
  
@@ -25,11 +27,12 @@
  
 3. git push origin master    안될시 git push 만 입력
 
-# 강제 업로드
+## 강제 업로드(안하는게 좋음)
 $ git push origin +master
 
 ====================================================================================
 # git 협업
+
 1. Fork 가져가기 
 2. origin(fork된 나의 레파지토리) clone 내려받기 [중요]
 3. origin(팀원), upstream(팀장) 주소 저장(remote add upstream 업스트림주소) 절대 upstream 건들지 않기
