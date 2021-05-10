@@ -45,3 +45,6 @@ $ git push origin +master
 6. 팀원들은 fetch(git fetch upstream) 받고, rebase(git rebase upstream/master) 한다.
 7. git push origin <브랜치명>
 8. 모든 팀원들의 PR이 완료되면, 각 팀원들의 브랜치를 삭제하고 패치(main) 후 다시 브랜치 생성 후 반복 [권장]
+
+## 주의사항 
+- 같은 파일 다른인원이 동시 작업하면 안됨
