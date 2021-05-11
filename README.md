@@ -37,11 +37,11 @@ $ git push origin +master
 3. origin(팀원), upstream(팀장) 주소 저장(remote add upstream 업스트림주소) 절대 upstream 건들지 않기
 4. pull request(PR) - 팀장한테 요청, 팀장은 모두 수락 후
 5. branch 생성
-브랜치 목록 보기 : git branch --list
-브랜치 생성만 : git branch <브랜치명>
-브랜치 이동 : git switch <브랜치명>
-브랜치 생성 동시에 이동 : git checkout -b <브랜치명>
-브랜치 삭제 : git branch -d <브랜치명>
+- 브랜치 목록 보기 : git branch --list
+- 브랜치 생성만 : git branch <브랜치명>
+- 브랜치 이동 : git switch <브랜치명>
+- 브랜치 생성 동시에 이동 : git checkout -b <브랜치명>
+- 브랜치 삭제 : git branch -d <브랜치명>
 6. 팀원들은 fetch(git fetch upstream) 받고, rebase(git rebase upstream/master) 한다.
 7. git push origin <브랜치명>
 8. 모든 팀원들의 PR이 완료되면, 각 팀원들의 브랜치를 삭제하고 패치(main) 후 다시 브랜치 생성 후 반복 [권장]
