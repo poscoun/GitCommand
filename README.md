@@ -27,6 +27,9 @@
  
 3. git push origin master    안될시 git push 만 입력
 
+## 캐시 삭제
+- git rm -r --cached .
+
 ## 강제 업로드(안하는게 좋음)
 $ git push origin +master
 
